@@ -71,10 +71,12 @@
 }
 
 .duration {
-  width: 30px;
+  padding-right: 15px;
   font-weight: bold;
 }
 
 .isUnseen {
   font-weight: bold;
+  border-left: red solid 5px;
+  padding-left: 5px;
 }

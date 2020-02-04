@@ -4,11 +4,7 @@ import "../assets/css/style.css";
 
 function IsUnseen(props) {
   console.log(props);
-  return (
-    <>
-      <div className="isUnseen">{props.isUnseen ? "Inédit" : ""}</div>
-    </>
-  );
+  return <>{props.isUnseen ? <div className="isUnseen">"Inédit"</div> : ""}</>;
 }
 
 export default IsUnseen;

@@ -8,11 +8,12 @@ import data from "../assets/content/data.json";
 
 function Grid(props) {
   //   console.log(data[0]);
+  const programs = data.map(item => {
+    return <Program content={item}></Program>;
+  });
   return (
     <>
-      <div className="grid">
-        <Program content={data[0]}></Program>
-      </div>
+      <div className="grid">{programs}</div>
     </>
   );
 }
